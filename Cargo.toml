@@ -1,0 +1,18 @@
+# [package]
+
+# Default configuration, which sub-crate can inherit or override
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["chenjjiaa"]
+description = "RuaCoin: A Rust-based crypto CEX backend and infrastructure."
+homepage = "https://github.com/chenjjiaa/rua-coin"
+repository = "https://github.com/chenjjiaa/rua-coin"
+keywords = ["crypto", "cex", "exchange", "blockchain", "rust"]
+
+[workspace]
+resolver = "2"
+members = [
+    "crates/oms",
+]
