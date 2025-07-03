@@ -1,0 +1,6 @@
+[package]
+name = "market"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "^1.45.1", features = ["full"] }

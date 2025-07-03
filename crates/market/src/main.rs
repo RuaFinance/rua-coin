@@ -12,24 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-mod handler;
-mod models;
-mod routes;
-mod id_generator;
-
-use actix_web::{App, HttpServer, middleware::Logger}; 
-
-/// cargo run --package oms --bin oms
-#[actix_web::main] // or #[tokio::main]
-async fn main() -> std::io::Result<()> {
-    env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
-
-    HttpServer::new(|| {
-        App::new()
-            .wrap(Logger::default())
-            .service(routes::base_route())
-    })
-    .bind(("127.0.0.1", 8080))?
-    .run()
-    .await
+fn main() {
+    println!("Hello, world!");
 }

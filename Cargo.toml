@@ -14,5 +14,7 @@ keywords = ["crypto", "cex", "exchange", "blockchain", "rust"]
 [workspace]
 resolver = "2"
 members = [
+    "crates/account",
+    "crates/market",
     "crates/oms",
 ]
