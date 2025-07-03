@@ -1,0 +1,13 @@
+{
+    "paths": ["crates/**/*.rs", "**/*.sh"],
+    "exclude": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/*.min.js", "**/target/**"],
+    "extensions": [".rs", ".sh"],
+    "comment_style": {
+        ".rs": {
+            "line_comment": "//"
+        },
+        ".sh": {
+            "line_comment": "#"
+        }
+    }
+}
